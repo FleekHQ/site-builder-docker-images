@@ -1,1 +1,1 @@
-FROM node:slim
+FROM node:$NODE_VERSION
