@@ -1,5 +1,3 @@
-FROM node:10-alpine
+FROM linuxbrew/brew
 
-RUN apk update
-
-RUN apk add git hugo
+RUN brew install hugo
