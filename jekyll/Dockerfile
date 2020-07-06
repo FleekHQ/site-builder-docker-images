@@ -1,2 +1,2 @@
-ENV JEKYLL_ROOTLESS=true
 FROM jekyll/builder
+ENV JEKYLL_ROOTLESS=true
