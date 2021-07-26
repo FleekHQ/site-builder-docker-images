@@ -11,3 +11,7 @@ RUN wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hug
     hugo version && rm hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
     
 RUN wget -q -O - https://raw.githubusercontent.com/canha/golang-tools-install-script/master/goinstall.sh | bash
+
+ENV HUGO_ENV=production
+
+ENTRYPOINT [""]
