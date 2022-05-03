@@ -2,6 +2,7 @@
 
 NODE_VERSION=$(echo $DOCKER_TAG | cut -d "-" -f2)
 
+# If running on M1 add --platform linux/x86_64 on docker build
 if [ $DOCKER_TAG == "latest" ]
 then
   docker build . --build-arg NODE_VERSION=${DOCKER_TAG} -t ${IMAGE_NAME}
